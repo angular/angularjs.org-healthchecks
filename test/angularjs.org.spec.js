@@ -96,7 +96,7 @@ describe('material.angularjs.org', function () {
   });
 
   it('should build docs.js', function (done) {
-    request('https://material.angularjs.org/docs.js', function (err, res, body) {
+    request('https://material.angularjs.org/latest/docs.js', function (err, res, body) {
       expect(!err).toBe(true);
       expect(res.statusCode).toBe(200);
       expect(body).toContain('angular.module');
